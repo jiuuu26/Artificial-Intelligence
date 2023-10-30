@@ -16,6 +16,7 @@ gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 # 이미지의 크기 조정
 gray_small=cv.resize(gray,dsize=(0,0),fx=0.7, fy=0.7)
 
+
 # 이미지 파일에 저장
 cv.imwrite('soccer_gray.jpg', gray)
 cv.imwrite('soccer_gray_small.jpg', gray_small)

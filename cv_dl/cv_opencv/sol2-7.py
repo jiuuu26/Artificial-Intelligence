@@ -10,7 +10,6 @@ img=cv.imread("resource/son.jpg")
 if img is None:
     sys.exit("파일을 찾을 수 없습니다.")
 
-img = cv.resize(img, dsize=(0,0),fx=1.5,fy=1.5)
 
 def draw(event,x,y,flags,param):
     if event==cv.EVENT_LBUTTONDOWN:
@@ -20,7 +19,7 @@ def draw(event,x,y,flags,param):
 
     cv.imshow("Drawing",img)
 
-cv.namedWindow("What is this")
+cv.namedWindow("Drawing")
 cv.imshow("Drawing",img)
 
 cv.setMouseCallback("Drawing", draw)
