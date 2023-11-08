@@ -1,7 +1,8 @@
 import cv2 as cv
 import sys
 
-img=cv.imread("resource/son.jpg")
+img=cv.imread("resource/soccer.jpg")
+img=cv.resize(img,dsize=(0,0),fx=0.5,fy=0.5)
 
 if img is None:
     sys.exit("파일을 찾을 수 없습니다.")
